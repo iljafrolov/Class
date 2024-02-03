@@ -1,7 +1,76 @@
-body {
-    background: green;
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+* {
+  font-family: "Protest Guerrilla", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.profile-picture {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 50px;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  box-shadow: 4px 4px 2px rgba(75, 38, 77, 0.636);
+}
+.work-experience-container {
+    display: flex;
 }
 
-section {
-    background: red;
+.work-experience {
+  width: 600px;
+  margin: 30px;
+  box-shadow: 10px 10px 10px rgba(16, 137, 87, 0.636);
+  border: 1px solid black;
+  background-color: green;
+  animation: super-cool 7s ease 2s infinite alternate none running;
 }
+
+
+.contact-info {
+}
+
+@keyframes super-cool {
+    0% {
+      background-color: green;
+    }
+    50% {
+      background-color: blue;
+    }
+    100% {
+      background-color: green;
+    }
+  }
+@media all and (max-width: 1000px) {
+  .work-experience {
+    width: 600px;
+    font-size: large;
+  }
+}
+@media all and (max-width: 600px) {
+  .work-experience {
+    width: 300px;
+    font-size: medium;
+  }
+}
+@media all and (max-width: 300px) {
+  .work-experience {
+    width: 150px;
+    font-size: small;
+  }
+
+  .work-experience-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
