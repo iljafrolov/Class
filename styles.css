@@ -33,7 +33,7 @@
 
 @keyframes super-cool {
     0% {
-      background-color: green;
+      background-color: red;
     }
     50% {
       background-color: blue;
